@@ -1,0 +1,183 @@
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height:1.6;
+    background-color:#ffffff;
+}
+
+/* Header */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#4b0082;
+    color:white;
+}
+
+header h2{
+    font-size:28px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#e9d5ff;
+}
+
+/* Hero Section */
+.hero{
+    text-align:center;
+    padding:120px 20px;
+    background:linear-gradient(135deg,#6a11cb,#8e44ad);
+    color:white;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.hero h3{
+    font-size:1.5rem;
+    margin-bottom:15px;
+}
+
+.hero p{
+    font-size:1.1rem;
+    max-width:600px;
+    margin:auto;
+}
+
+.hero button{
+    margin-top:30px;
+    padding:12px 25px;
+    border:none;
+    border-radius:6px;
+    background:white;
+    color:#6a11cb;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.hero button:hover{
+    background:#e9d5ff;
+    transform:translateY(-3px);
+}
+
+/* Sections */
+section{
+    padding:70px 40px;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:25px;
+    color:#4b0082;
+}
+
+/* About Section */
+#about{
+    background:#faf5ff;
+    text-align:center;
+}
+
+#about p{
+    max-width:700px;
+    margin:auto;
+}
+
+/* Skills Section */
+.skills-container{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.skill-card{
+    background:#f3e8ff;
+    padding:20px;
+    width:160px;
+    text-align:center;
+    border-radius:10px;
+    border:2px solid #c084fc;
+    font-weight:bold;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-5px);
+}
+
+/* Contact Section */
+#contact{
+    background:#faf5ff;
+    text-align:center;
+}
+
+#contact p{
+    margin:10px 0;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:20px;
+    background:#4b0082;
+    color:white;
+}
+
+/* Responsive Design */
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:15px;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero h3{
+        font-size:1.2rem;
+    }
+
+    .skills-container{
+        flex-direction:column;
+        align-items:center;
+    }
+}
